@@ -11,7 +11,16 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      p {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body class="flex p-0 md:py-5 justify-center items-center">
@@ -39,9 +48,9 @@
         <div class="flex flex-col justify-center items-start">
           <p class="text-sm">
             <span class="font-bold">Mark Webber</span> reacted to your recent
-            post My first tournament today!
+            post <span class="font-bold">My first tournament today!</span>
           </p>
-          <p>1m ago</p>
+          <p class="text-sm text-gray-500">1m ago</p>
         </div>
       </div>
 
