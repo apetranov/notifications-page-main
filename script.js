@@ -12,6 +12,16 @@ const read3 = document.querySelector(".read3");
 
 const counterElement = document.querySelector(".notisCount");
 
+const markAllRead = document.querySelector(".markAllRead");
+
+markAllRead.addEventListener("click", () => {
+  console.log("Mark all read clicked");
+  read.innerHTML = "Read";
+  read2.innerHTML = "Read";
+  read3.innerHTML = "Read";
+  counterElement.textContent = "0";
+});
+
 toggleDiv.addEventListener("click", () => {
   // Check the current value of read.innerHTML before resetting it
   if (read.innerHTML === "Unread") {
